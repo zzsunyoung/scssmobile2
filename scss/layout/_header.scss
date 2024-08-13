@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding-inline: rem(20);
+  height: rem(40);
+
+  h1 {
+    order: 2;
+    justify-self: center;
+    color: var(--blue, #122d4d);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.05rem;
+  }
+  &__left {
+    order: 1;
+  }
+  &__right {
+    justify-self: end;
+    order: 3;
+  }
+}

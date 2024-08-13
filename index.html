@@ -1,11 +1,912 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>파일리스트</title>
+    <meta charset="utf-8" />
   </head>
   <body>
-    테스트 입니다.
+    <div class="wrapper">
+      <header class="header">
+        <h1>퍼블리싱 현황</h1>
+        <div class="top clear">
+          <ul>
+            <li>구분 :</li>
+            <li><span class="state r"></span></li>
+            <li>반응형</li>
+            <li><span class="state w"></span></li>
+            <li>WEB</li>
+            <li><span class="state m"></span></li>
+            <li>모바일&nbsp;&nbsp;&nbsp;/</li>
+            <li>상태 :</li>
+            <li><span class="state end"></span></li>
+            <li>완료</li>
+            <li><span class="state ing"></span></li>
+            <li>진행중&nbsp;&nbsp;&nbsp;/</li>
+            <li><span class="state modify"></span></li>
+            <li>수정</li>
+          </ul>
+          <div class="status">
+            <span id="progress"><em></em></span> <span id="total"></span>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>페이지</th>
+              <th>파일명</th>
+              <th>시작일</th>
+              <th>종료일</th>
+              <th>웹표준</th>
+              <th>호환성</th>
+              <th>웹접근성</th>
+              <th>구분</th>
+              <th>상태</th>
+              <th>참고사항</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="list">
+              <td>스타일가이드</td>
+              <td><a href="./pages/style.html" target="_blank">style.html</a></td>
+              <td>2024.08.10</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr class="list">
+              <td>main.html</td>
+              <td><a href="main.html" target="_blank">main.html</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr>
+              <td class="category" colspan="10">splash</td>
+            </tr>
+            <tr class="list">
+              <td>Splash</td>
+              <td><a href="./pages/00-Splash.html" target="_blank">Splash</a></td>
+              <td>2024.00.20</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr>
+              <td class="category" colspan="10">Onboarding Screen</td>
+            </tr>
+            <tr class="list">
+              <td>Onboarding Screen</td>
+              <td><a href="./pages/01-OnboardingScreen 01.html" target="_blank">01-Onboarding Screen</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr class="list">
+              <td>Onboarding Screen2</td>
+              <td><a href="./pages/01-OnboardingScreen 02.html" target="_blank">01-Onboarding Screen2</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr class="list">
+              <td>Onboarding Screen3</td>
+              <td><a href="./pages/01-OnboardingScreen 03.html" target="_blank">01-Onboarding Screen3</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr>
+              <td class="category" colspan="10">Sign in, Create Account,Complete Your Profile</td>
+            </tr>
+            <tr class="list">
+              <td>04-Login</td>
+              <td><a href="./pages/04-Login.html" target="_blank">04-Login</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr class="list">
+              <td>05-Register</td>
+              <td><a href="./pages/04-Register.html" target="_blank">05-Register</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr class="list">
+              <td>06-Profile</td>
+              <td><a href="./pages/06-Profile.html" target="_blank">06-Profile</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr>
+              <td class="category" colspan="10">Swipe List</td>
+            </tr>
+            <tr class="list">
+              <td>07-Swipe</td>
+              <td><a href="./pages/07-Swipe.html" target="_blank">07-Swipe</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="category" colspan="10">Home,Listing</td>
+            </tr>
+            <tr class="list">
+              <td>10-Dashboard</td>
+              <td><a href="./pages/10-Dashboard.html" target="_blank">10-Dashboard</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr class="list">
+              <td>11-Listing</td>
+              <td><a href="./pages/10-Dashboard.html" target="_blank">11-Listing</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr>
+              <td class="category" colspan="10">06-earching</td>
+            </tr>
+            <tr class="list">
+              <td>12-Searching</td>
+              <td><a href="./pages/12-Searching.html" target="_blank">12-Searching</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+            <tr>
+              <td class="category" colspan="10">Property Detail Screen (About, Gallery, Review)</td>
+            </tr>
+            <tr class="list">
+              <td>13-Desciption</td>
+              <td><a href="./pages/13-Desciption.html" target="_blank">13-Desciption</a></td>
+              <td>2024.00.00</td>
+              <td>2024.00.00</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td><span class="state m"></span></td>
+              <td><span class="state ing"></span></td>
+              <td>
+                <p class="t_em"></p>
+              </td>
+            </tr>
+          </tbody>
+          <tr class="list">
+            <td>15-Reviewy</td>
+            <td><a href="./pages/15-Reviewy.html" target="_blank">15-Reviewy</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="category" colspan="10">08-Select Booking Type</td>
+          </tr>
+          <tr class="list">
+            <td>18-Booking Type</td>
+            <td><a href="./pages/18-BookingType.html" target="_blank">18-Booking Type</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="category" colspan="10">09-Property Review</td>
+          </tr>
+          <tr class="list">
+            <td>17-Property Review</td>
+            <td><a href="./pages/17-PropertyReview.html" target="_blank">17-Property Review</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="category" colspan="10">10-Book Tour (Your Information, Tour Request)</td>
+          </tr>
+          <tr class="list">
+            <td>18-Book Tour</td>
+            <td><a href="./pages/18-BookTour.html" target="_blank">18-Book Tour </a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>19-Book Tour</td>
+            <td><a href="./pages/19-BookTour.html" target="_blank">19-Book Tour </a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>20-Book Tour</td>
+            <td><a href="./pages/20-BookTour.html" target="_blank">20-Book Tour </a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="category" colspan="10">11-Agent Review Rating</td>
+          </tr>
+          <tr class="list">
+            <td>21-Agent Review Rating</td>
+            <td><a href="./pages/21-AgentReview.html" target="_blank">Agent Review Rating</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="category" colspan="10">12-Payment Methods</td>
+          </tr>
+          <tr class="list">
+            <td>22-Payment Methods</td>
+            <td><a href="./pages/22-PaymentMethods.html" target="_blank">Payment Methods</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>23-Add Card</td>
+            <td><a href="./pages/23-AddCard.html" target="_blank">Add Card</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>24-Reivew Summary</td>
+            <td><a href="./pages/24-ReivewSummary.html" target="_blank">Reivew Summary</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>25-Booking Done</td>
+            <td><a href="./pages/25-BookingDone.html" target="_blank">Booking Done</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>26-E-Recepit</td>
+            <td><a href="./pages/26-E-Recepit.html" target="_blank">E-Recepit</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="category" colspan="10">13-Favourite</td>
+          </tr>
+          <tr class="list">
+            <td>27-Favorite</td>
+            <td><a href="./pages/27-Favorite.html" target="_blank">Favorite</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>27-Remove Favorite</td>
+            <td><a href="./pages/28-RemoveFavorite.html" target="_blank">28-Remove Favorite</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="category" colspan="10">14-Search,Filter</td>
+          </tr>
+          <tr class="list">
+            <td>29-Searching</td>
+            <td><a href="./pages/29-Searching.html" target="_blank">Searching</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>30-Search Result</td>
+            <td><a href="./pages/30-SearchResult.html" target="_blank">Search Result</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>31-Filter</td>
+            <td><a href="./pages/31-Filter.html" target="_blank">31-Filter</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="category" colspan="10">15-Notification</td>
+          </tr>
+          <tr class="list">
+            <td>32-Notification</td>
+            <td><a href="./pages/32-Notification.html" target="_blank">Notification</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="category" colspan="10">16_My Booking(Upcoming,Completed,Cancelled)</td>
+          </tr>
+          <tr class="list">
+            <td>33-My Booking</td>
+            <td><a href="./pages/33-MyBooking.html" target="_blank">My Booking</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>34-Complete Booking</td>
+            <td><a href="./pages/34-CompleteBooking.html" target="_blank">Complete Booking</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr class="list">
+            <td>35-Cancelled Booking</td>
+            <td><a href="./pages/35-CancelledBooking.html" target="_blank">Cancelled Booking</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="category" colspan="10">17</td>
+          </tr>
+          <tr class="list">
+            <td>36-Cancel Booking</td>
+            <td><a href="./pages/36-CancelBooking.html" target="_blank">Cancel Booking</a></td>
+            <td>2024.00.00</td>
+            <td>2024.00.00</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td><span class="state m"></span></td>
+            <td><span class="state ing"></span></td>
+            <td>
+              <p class="t_em"></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-style: normal;
+      }
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
+      img {
+        border: 0;
+      }
+      label,
+      input {
+        vertical-align: middle;
+      }
+      input {
+        outline: none;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      caption {
+        width: 100%;
+        height: 30px;
+      }
+      body {
+        padding: 0 20px;
+        font-size: 16px;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+      p {
+        line-height: 1.5;
+      }
+
+      .wrapper {
+        width: 100%;
+        margin: auto;
+      }
+      table {
+        border-bottom: 1px solid #f4f4f4;
+        margin-bottom: 50px;
+        border-top: 3px solid #d2d6de;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: normal;
+        margin: 40px 0;
+      }
+      h2 {
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 20px;
+      }
+      hr {
+        margin-bottom: 50px;
+      }
+      table {
+        tr {
+          &:last-child {
+            td {
+              border-bottom: none;
+            }
+          }
+
+          th,
+          td {
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+          }
+          th {
+            font-weight: normal;
+            border-right: 1px solid #f4f4f4;
+            border-bottom: 1px solid #f4f4f4;
+            background-color: #fff;
+            &:last-child {
+              border-right: none;
+            }
+          }
+          td {
+            padding: 5px;
+            font-size: 14px;
+            border-bottom: 1px solid #f4f4f4;
+            border-right: 1px solid #f4f4f4;
+            color: #666;
+            &:first-child {
+              width: 20%;
+              padding-left: 20px;
+              text-align: left;
+            }
+            &:nth-of-type(2) {
+              width: 20%;
+            }
+            &:nth-of-type(3) {
+              width: 10%;
+            }
+            &:nth-of-type(4) {
+              width: 5%;
+            }
+            &:nth-of-type(5) {
+              width: 5%;
+            }
+            &:nth-of-type(6) {
+              width: 5%;
+            }
+            &:nth-of-type(7) {
+              width: 5%;
+            }
+            &:nth-of-type(8) {
+              width: 5%;
+            }
+            &:nth-of-type(9) {
+              width: 5%;
+            }
+            &:last-child {
+              width: 40%;
+              text-align: left;
+            }
+
+            &:last-child {
+              border-right: none;
+            }
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+            &.category {
+              position: relative;
+              padding: 10px;
+              text-align: left;
+              font-size: 15px;
+              background-color: #f9f9f9;
+              color: #1d1e25;
+              &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                width: 3px;
+                height: 100%;
+                background-color: #d2d6de;
+                content: "";
+              }
+            }
+          }
+        }
+      }
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        ul {
+          display: flex;
+          margin-bottom: 50px;
+        }
+        li {
+          display: flex;
+          margin-right: 10px;
+          line-height: 25px;
+          &:first-child,
+          &:nth-of-type(8) {
+            font-size: 1rem;
+          }
+          &:nth-of-type(2) span,
+          &:nth-of-type(4),
+          &:nth-of-type(6),
+          &:nth-of-type(9),
+          &:nth-of-type(11) {
+            text-align: center;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .header .list {
+        padding: 0 0 50px 0;
+        line-height: 30px;
+      }
+      .state {
+        display: inline-block;
+        color: #fff;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        line-height: 25px;
+        &.r {
+          background-color: #a55eea;
+          &::before {
+            content: "R";
+          }
+        }
+        &.w {
+          background-color: #20bf6b;
+          &::before {
+            content: "W";
+          }
+        }
+        &.m {
+          background-color: #f7b731;
+          &::before {
+            content: "M";
+          }
+        }
+        &.end {
+          background-color: #eb3b5a;
+          font-weight: bold;
+          &::before {
+            content: "완";
+          }
+        }
+        &.ing {
+          background-color: #2d98da;
+          font-weight: bold;
+          &::before {
+            content: "진";
+          }
+        }
+        &.modify {
+          padding: 0 5px;
+          border-radius: 30px;
+          font-weight: bold;
+          background-color: #39c4cd;
+          text-align: center;
+          &::before {
+            content: "수정";
+          }
+        }
+        span {
+          font-size: 16px;
+          color: #666;
+        }
+      }
+      .t_em {
+        color: #e10e0e;
+      }
+      .t_re {
+        color: #046ac9;
+      }
+      .t_pu {
+        color: #17ae03;
+      }
+      .t_lg {
+        color: #c904b4;
+      }
+
+      .list.none a {
+        text-decoration: line-through;
+        color: #aeaeae;
+        cursor: not-allowed;
+      }
+      #progress {
+        overflow: hidden;
+        float: left;
+        display: block;
+        width: 100%;
+        height: 20px;
+        margin-bottom: 5px;
+        background: #eee;
+        border-radius: 30px;
+        em {
+          display: block;
+          height: 100%;
+          background: #eb3b5a;
+          border-radius: 30px;
+        }
+      }
+      .status {
+        width: 300px;
+      }
+      #finish {
+        color: #1352a2;
+      }
+      #total {
+        display: block;
+      }
+      .percent {
+        display: block;
+        float: right;
+      }
+    </style>
+    <script>
+      const content = document.querySelector(".content table");
+      const graph = document.querySelector("#progress em");
+      const graphTotal = document.querySelector("#total");
+      const total = content.querySelectorAll(".list").length;
+      const finish = content.querySelectorAll(".list .end").length;
+      const progress = Math.floor((finish / total) * 100);
+      graph.style.width = progress + "%";
+      graphTotal.innerHTML = `
+            ${finish} / ${total}page <span class='percent'>진행률 ${progress}%</span>
+        `;
+    </script>
   </body>
 </html>

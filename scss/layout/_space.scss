@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+$mt: (12, 24);
+
+.pd20 {
+  padding: 0 rem(20);
+}

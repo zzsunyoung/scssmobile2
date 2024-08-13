@@ -1,0 +1,42 @@
+@use "../abstracts/" as *;
+
+%iconButtion {
+  display: inline-block;
+  width: rem(20);
+  height: rem(20);
+  .hdeader & {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.btn-prev {
+  @include background("ico_prev.svg", center);
+  @extend %iconButtion;
+}
+.btn-search {
+  @include background("ico_search.svg", center);
+  @extend %iconButtion;
+}
+
+.btn-menu {
+  @include background("ico_menu.svg", center);
+  @extend %iconButtion;
+}
+
+.search__filter {
+  width: rem(52);
+  border-radius: 1rem;
+  background: $button-blue;
+  box-shadow: 0 2px 5px rgba(48, 141, 255, 0.2);
+  flex-shrink: 0;
+  margin-left: rem(12);
+
+  > i {
+    @include background("ico_filter.svg", center);
+    overflow: hidden;
+    color: transparent;
+    width: rem(21);
+    display: inline-block;
+  }
+}

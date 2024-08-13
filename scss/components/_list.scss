@@ -1,0 +1,49 @@
+@use "../abstracts/" as *;
+
+$colorb9: #b9b9b9;
+.list-type1 {
+  display: grid;
+  gap: rem(8);
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: rem(20);
+  background: var(--white);
+  li {
+    background: var(--white, #fff);
+    border-radius: rem(10);
+    box-shadow: 0 2px 4px rgba(0, 32, 96, 0.2);
+  }
+  &__content {
+    padding: rem(8);
+    .list-tit {
+      font-size: 1.2rem;
+      color: $black2f;
+      a {
+        font-weight: 600;
+        color: red;
+      }
+    }
+    .list-info {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      p {
+        font-size: rem(9);
+        color: $Fontblue;
+      }
+    }
+    .map {
+      font-size: rem(7);
+      color: $colorb9;
+      &::before {
+        content: "";
+        @include background("ico_map.svg", center);
+        width: rem(8);
+        height: rem(11);
+        display: inline-block;
+        position: relative;
+        left: rem(-3);
+        top: rem(3);
+      }
+    }
+  }
+}
