@@ -435,28 +435,6 @@ body {
   box-sizing: border-box;
 }
 
-.list_check {
-  display: block;
-}
-.list_check input {
-  overflow: hidden;
-  position: absolute;
-  border: 0;
-  width: 1px;
-  height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-.list_check input:checked + label {
-  background: url(../images/ico_bookmark_off.svg) no-repeat center;
-}
-.list_check label {
-  cursor: pointer;
-  background: url(../images/ico_bookmark_on.svg) no-repeat center;
-  width: 3.3rem;
-  height: 3.3rem;
-  display: block;
-}
-
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
