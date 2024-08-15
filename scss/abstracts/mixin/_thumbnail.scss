@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+$img-xsmall-width: rem(60);
+$img-xsmall-height: rem(60);
+
+$img-small-width: rem(88);
+$img-small-height: rem(88);
+
+$img-large-width: rem(100);
+$img-large-height: rem(100);
+
+@mixin img-size($img-size) {
+  @if $img-size == xsmall {
+    width: $img-xsmall-width;
+    height: $img-xsmall-height;
+  } @else if $img-size == small {
+    width: $img-small-width;
+    height: $img-small-height;
+  } @else if $img-size == large {
+    width: $img-large-width;
+    height: $img-large-height;
+  }
+}

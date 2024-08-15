@@ -208,16 +208,43 @@ body {
   display: inline-block;
 }
 
+.list_tab {
+  padding: 1rem 0rem 0rem 0rem;
+  display: flex;
+  gap: 9px;
+  margin-bottom: 1rem;
+  border-radius: 5rem;
+  padding: 0.9rem 1.8rem 0.9rem 0rem;
+}
+.list_tab li {
+  align-items: flex-start;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.list_tab li a {
+  color: #242424;
+  background: #f4f6f9;
+  border-radius: 5rem;
+  padding: 0.9rem 1.8rem;
+}
+.list_tab li.__active a {
+  color: #fff;
+  border-radius: 5rem;
+  padding: 0.9rem 1.8rem;
+  background: #246bfd;
+}
+
 .list-type1 {
   display: grid;
-  gap: 0.8rem;
+  gap: 1.8rem;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 2rem;
   background: var(--white);
 }
 .list-type1 li {
   background: var(--white, #fff);
-  border-radius: 1rem;
+  border-radius: 1.017rem;
   box-shadow: 0 2px 4px rgba(0, 32, 96, 0.2);
 }
 .list-type1__content {
@@ -240,11 +267,12 @@ body {
   font-size: 0.9rem;
   color: #0066ff;
 }
-.list-type1__content .map {
+
+.map {
   font-size: 0.7rem;
   color: #b9b9b9;
 }
-.list-type1__content .map::before {
+.map::before {
   content: "";
   background: url(../images/ico_map.svg) no-repeat center;
   width: 0.8rem;
@@ -253,6 +281,126 @@ body {
   position: relative;
   left: -0.3rem;
   top: 0.3rem;
+}
+.map__black {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #415770;
+  margin-bottom: 0.7rem;
+}
+.map__black::before {
+  content: "";
+  background: url(../images/ico_map2.svg) no-repeat center;
+  width: 0.8rem;
+  height: 1.1rem;
+  display: inline-block;
+  position: relative;
+  left: -0.3rem;
+  top: 0.3rem;
+}
+
+.thumbnail {
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  overflow: hidden;
+  height: 10.5rem;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list-type2__content {
+  display: flex;
+  flex: 1;
+}
+.list-type2__thumbnail {
+  border-radius: 1rem;
+  height: 8.9rem;
+}
+.list-type2-box {
+  flex: 1;
+  margin-left: 1rem;
+}
+.list-type2-box .list-tit {
+  color: #122d4d;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.list-type2 .list-catagory {
+  display: flex;
+  justify-content: space-between;
+}
+
+.star {
+  font-size: 1.2rem;
+  color: #8997a9;
+}
+.star::before {
+  content: "";
+  background: url(../images/ico_star.svg) no-repeat center;
+  width: 1.3rem;
+  height: 1.3rem;
+  display: inline-block;
+  position: relative;
+  left: -0.3rem;
+  top: 0.2rem;
+}
+
+.catagory {
+  background-color: #f4f6f9;
+  color: #478ff1;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 0.96rem;
+  padding: 0.5rem 0.6rem;
+}
+
+.list-info {
+  display: flex;
+  justify-content: space-between;
+  color: #122d4d;
+}
+.list-info .info {
+  display: block;
+  position: relative;
+}
+.list-info .mask {
+  display: inline;
+  position: relative;
+  margin-right: 1.2rem;
+  line-height: 0.24rem;
+  color: #122d4d;
+}
+.list-info .mask::before {
+  content: "";
+  background: url(../images/ico_mask.svg) no-repeat center;
+  width: 1.2rem;
+  height: 0.94rem;
+  display: inline-block;
+  position: relative;
+  left: -0.3rem;
+  top: 0.2rem;
+}
+.list-info .bed {
+  display: inline;
+  position: relative;
+}
+.list-info .bed::before {
+  content: "";
+  background: url(../images/ico_bed.svg) no-repeat center;
+  width: 1.2rem;
+  height: 0.94rem;
+  display: inline-block;
+  position: relative;
+  left: -0.3rem;
+  top: 0.2rem;
+}
+.list-info .price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0066ff;
 }
 
 .search {
@@ -263,7 +411,7 @@ body {
 .search__bg {
   background: var(--white, #fff);
   border-radius: 10px;
-  padding: 2rem 1rem;
+  padding: 1.3rem;
   width: calc(100% - 5.2rem);
   box-shadow: 0 2px 5px rgba(61, 61, 61, 0.2);
 }
@@ -276,15 +424,37 @@ body {
   position: absolute;
 }
 .search__input {
-  margin: auto 2rem;
+  margin: 0rem 0rem 0rem 2rem;
 }
 .search__input input {
-  height: 1.7rem;
+  height: 2.5rem;
   padding: 0rem 1rem;
   border: 0;
   background-color: #fff;
   width: 100%;
   box-sizing: border-box;
+}
+
+.list_check {
+  display: block;
+}
+.list_check input {
+  overflow: hidden;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.list_check input:checked + label {
+  background: url(../images/ico_bookmark_off.svg) no-repeat center;
+}
+.list_check label {
+  cursor: pointer;
+  background: url(../images/ico_bookmark_on.svg) no-repeat center;
+  width: 3.3rem;
+  height: 3.3rem;
+  display: block;
 }
 
 .header {

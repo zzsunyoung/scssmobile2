@@ -1,1 +1,32 @@
 @use "../abstracts/" as *;
+
+.list_tab {
+  padding: rem(10) rem(0) rem(0) rem(0);
+  display: flex;
+  gap: 9px;
+  margin-bottom: rem(10);
+  border-radius: rem(50);
+  padding: rem(9) rem(18) rem(9) rem(0);
+
+  li {
+    align-items: flex-start;
+    text-align: center;
+    font-size: rem(13);
+    font-weight: 500;
+
+    a {
+      color: $black24;
+      background: $grayf4;
+      border-radius: rem(50);
+      padding: rem(9) rem(18);
+    }
+    &.__active {
+      a {
+        color: $white;
+        border-radius: rem(50);
+        padding: rem(9) rem(18);
+        background: $primary;
+      }
+    }
+  }
+}

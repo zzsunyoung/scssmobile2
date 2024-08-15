@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+$bgcolore5: #e5f0ff;
+.list_check {
+  display: block;
+  input {
+    @include a11y-hidden;
+    &:checked + label {
+      @include background("ico_bookmark_off.svg", center);
+    }
+  }
+  label {
+    cursor: pointer;
+    @include background("ico_bookmark_on.svg", center);
+    width: rem(33);
+    height: rem(33);
+    display: block;
+  }
+}
