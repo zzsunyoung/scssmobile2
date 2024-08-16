@@ -11,6 +11,9 @@
     padding: rem(13);
     width: calc(100% - rem(52));
     box-shadow: 0 2px 5px rgba(61, 61, 61, 0.2);
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
     &::before {
       content: "";
       @include background("ico_search.svg", center);
@@ -22,7 +25,7 @@
   }
 
   &__input {
-    margin: rem(0) rem(0) rem(0) rem(20);
+    margin-left: rem(20);
     input {
       height: rem(25);
       padding: rem(0) rem(10);

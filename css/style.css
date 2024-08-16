@@ -228,7 +228,7 @@ body {
   border-radius: 5rem;
   padding: 0.9rem 1.8rem;
 }
-.list_tab li.__active a {
+.list_tab li.--active a {
   color: #fff;
   border-radius: 5rem;
   padding: 0.9rem 1.8rem;
@@ -238,7 +238,7 @@ body {
 .list-type1 {
   display: grid;
   gap: 1.8rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   margin-top: 2rem;
   background: var(--white);
 }
@@ -270,7 +270,12 @@ body {
 
 .map {
   font-size: 0.7rem;
+}
+.list-type1 .map {
   color: #b9b9b9;
+}
+.list-type2 .map {
+  color: #415770;
 }
 .map::before {
   content: "";
@@ -285,7 +290,6 @@ body {
 .map__black {
   font-size: 1rem;
   font-weight: 500;
-  color: #415770;
   margin-bottom: 0.7rem;
 }
 .map__black::before {
@@ -302,7 +306,7 @@ body {
 .thumbnail {
   border-radius: 1.5rem 1.5rem 0rem 0rem;
   overflow: hidden;
-  height: 10.5rem;
+  aspect-ratio: 3/2;
 }
 .thumbnail img {
   width: 100%;
@@ -366,14 +370,20 @@ body {
   display: block;
   position: relative;
 }
-.list-info .mask {
+.list-info .price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0066ff;
+}
+
+.mask {
   display: inline;
   position: relative;
   margin-right: 1.2rem;
   line-height: 0.24rem;
   color: #122d4d;
 }
-.list-info .mask::before {
+.mask::before {
   content: "";
   background: url(../images/ico_mask.svg) no-repeat center;
   width: 1.2rem;
@@ -383,11 +393,12 @@ body {
   left: -0.3rem;
   top: 0.2rem;
 }
-.list-info .bed {
+
+.bed {
   display: inline;
   position: relative;
 }
-.list-info .bed::before {
+.bed::before {
   content: "";
   background: url(../images/ico_bed.svg) no-repeat center;
   width: 1.2rem;
@@ -396,11 +407,6 @@ body {
   position: relative;
   left: -0.3rem;
   top: 0.2rem;
-}
-.list-info .price {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #0066ff;
 }
 
 .search {
@@ -414,6 +420,9 @@ body {
   padding: 1.3rem;
   width: calc(100% - 5.2rem);
   box-shadow: 0 2px 5px rgba(61, 61, 61, 0.2);
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
 }
 .search__bg::before {
   content: "";
@@ -424,7 +433,7 @@ body {
   position: absolute;
 }
 .search__input {
-  margin: 0rem 0rem 0rem 2rem;
+  margin-left: 2rem;
 }
 .search__input input {
   height: 2.5rem;
