@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>style 가이드</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/guide.css" />
+  </head>
+  <body>
+    <div class="mx16">
+      <details name="guide">
+        <summary>텍스트 가이드</summary>
+        <div class="mx10">
+          <p class="heading xxl">xxlarge</p>
+          <p class="heading xl">xlarge</p>
+          <p class="heading lg">Large</p>
+          <p class="heading base">md</p>
+        </div>
+      </details>
+      <details name="guide">
+        <summary>리스트 가이드</summary>
+        <div class="mx10">
+          <h2>type1</h2>
+          <ul class="list-type1">
+            <li>
+              <div class="thumbnail">
+                <img src="../images/@img_thumnail1.png" />
+              </div>
+              <div class="list-type1__content">
+                <p class="list-tit"><a href="#">Lorem Hous</a></p>
+                <div class="list-info">
+                  <div>
+                    <p>$340/month</p>
+                    <p class="map">Avenue,West Side</p>
+                  </div>
+                  <div class="list_check">
+                    <input type="checkbox" name="" id="check1" role="button" />
+                    <label for="check1"></label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="thumbnail">
+                <img src="../images/@img_thumnail2.png" alt="Lorem House" />
+              </div>
+              <div class="list-type1__content">
+                <p class="list-tit"><a href="#">Lorem Hous</a></p>
+                <div class="list-info">
+                  <div>
+                    <p>$340/month</p>
+                    <p class="map">Avenue,West Side</p>
+                  </div>
+                  <div class="list_check">
+                    <input type="checkbox" name="" id="check2" role="button" />
+                    <label for="check2" aria-label="즐겨찾기 추가" class=""></label>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <br />
+          <div>
+            <h2>type2</h2>
+            <div class="list-type2">
+              <div class="list-type2__content">
+                <div class="list-type2__thumbnail">
+                  <img src="../images/img_banner_hous1.png" alt="Woodland Apartment111111111" />
+                </div>
+                <div class="list-type2-box">
+                  <div class="list-catagory">
+                    <span class="star">4.9</span>
+                    <span class="catagory">Apartment</span>
+                  </div>
+                  <p class="list-tit"><a href="#">Woodland Apartment</a></p>
+                  <p class="map__black">Avenue,West Side</p>
+                  <div class="list-info">
+                    <div class="info">
+                      <span class="mask">1,225</span>
+                      <span class="bed">3.0</span>
+                    </div>
+                    <div class="price">$340/month</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+      </details>
+      <details name="guide">
+        <summary>탭가이드</summary>
+        <div class="mx10">
+          <h2>탭1</h2>
+          <nav class="tab-type1">
+            <ul>
+              <li>
+                <button class="--active">All</button>
+              </li>
+              <li>
+                <button>House</button>
+              </li>
+              <li>
+                <button>Villa</button>
+              </li>
+              <li>
+                <button>Apartment</button>
+              </li>
+            </ul>
+          </nav>
+          <br />
+          <h2>탭2</h2>
+          <nav class="tab-type2">
+            <ul>
+              <li><button class="--active">Upcoming</button></li>
+              <li><button>Completed</button></li>
+              <li><button>Cancelled</button></li>
+            </ul>
+          </nav>
+        </div>
+      </details>
+      <details name="guide" open>
+        <summary>Table</summary>
+        <div class="mx10">
+          <h2>테이블1</h2>
+          <table class="table-type1">
+            <caption>
+              Woodland Apartment summayr
+            </caption>
+            <colgroup>
+              <col style="width: 50%" />
+              <col style="*" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>Booking Date</th>
+                <td>
+                  <p>August 24, 2023 <span> 10:00 AM</span></p>
+                </td>
+              </tr>
+              <tr>
+                <th>Check In</th>
+                <td>
+                  <p>October 04, 2023</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Total</th>
+                <td>
+                  <p>November 03, 2023</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </div>
+  </body>
+</html>

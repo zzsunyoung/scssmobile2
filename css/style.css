@@ -158,7 +158,7 @@ input[type=date]:valid::before {
 }
 
 body[data-sub=subPage] {
-  background-color: #f9fbff;
+  background-color: #e6e6e6;
 }
 
 html {
@@ -208,7 +208,7 @@ body {
   display: inline-block;
 }
 
-.list_tab {
+.tab-type1 ul {
   padding: 1rem 0rem 0rem 0rem;
   display: flex;
   gap: 9px;
@@ -216,23 +216,46 @@ body {
   border-radius: 5rem;
   padding: 0.9rem 1.8rem 0.9rem 0rem;
 }
-.list_tab li {
-  align-items: flex-start;
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 500;
-}
-.list_tab li a {
+.tab-type1 li button {
   color: #242424;
   background: #f4f6f9;
   border-radius: 5rem;
   padding: 0.9rem 1.8rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
 }
-.list_tab li.--active a {
+.tab-type1 li button.--active {
   color: #fff;
   border-radius: 5rem;
   padding: 0.9rem 1.8rem;
   background: #246bfd;
+}
+
+.tab-type2 ul {
+  display: flex;
+}
+.tab-type2 li {
+  flex: 1;
+}
+.tab-type2 button {
+  color: #303131;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  line-height: 2.1rem;
+  background-image: linear-gradient(to bottom, #d6e9fc, #d6e9fc);
+  background-size: 100% 0.2rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.tab-type2 button.--active {
+  background-image: linear-gradient(to bottom, #006eff, #006eff);
+  font-weight: 700;
+  color: #006eff;
 }
 
 .list-type1 {
@@ -306,12 +329,16 @@ body {
 .thumbnail {
   border-radius: 1.5rem 1.5rem 0rem 0rem;
   overflow: hidden;
-  aspect-ratio: 3/2;
+  height: 10.5rem;
 }
 .thumbnail img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.thumbnail__small {
+  width: 8.8rem;
+  height: 8.8rem;
 }
 
 .list-type2__content {
@@ -335,6 +362,25 @@ body {
 .list-type2 .list-catagory {
   display: flex;
   justify-content: space-between;
+}
+.list-type2__notiIcon {
+  display: inline-flex;
+  width: 5.8rem;
+  height: 5.8rem;
+  background: red; /*#f4f6f9;8*/
+  border-radius: 10rem;
+  text-align: center;
+}
+.list-type2__notiIcon img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.shadow {
+  background: #fff;
+  box-shadow: 0 0.2rem 0.4rem 0px rgba(0, 32, 96, 0.2);
+  padding: 1rem;
+  border-radius: 1.5rem;
 }
 
 .star {
@@ -366,14 +412,18 @@ body {
   justify-content: space-between;
   color: #122d4d;
 }
-.list-info .info {
+
+.info {
   display: block;
   position: relative;
+  font-size: 1.1rem;
 }
-.list-info .price {
+
+.price {
   font-size: 1.1rem;
   font-weight: 600;
   color: #0066ff;
+  font-size: 1.1rem;
 }
 
 .mask {
@@ -442,6 +492,46 @@ body {
   background-color: #fff;
   width: 100%;
   box-sizing: border-box;
+}
+
+.heading.xxl {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.heading.xl {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.heading.base {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.table-type1 {
+  margin-top: 1.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.table-type1 dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+.table-type1 dl dt {
+  color: #677294;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.03rem;
+  text-align: left;
+}
+.table-type1 dl dd {
+  color: #122d4d;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: right;
+}
+.table-type1 .total {
+  margin-top: 4rem;
 }
 
 .header {
@@ -525,6 +615,18 @@ body {
 
 .pd20 {
   padding: 0 2rem;
+}
+
+.mx16 {
+  margin-inline: 1.6rem;
+}
+
+.mx10 {
+  margin-inline: 1rem;
+}
+
+.mt18 {
+  margin-top: 1.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

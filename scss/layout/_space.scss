@@ -1,7 +1,16 @@
 @use "../abstracts/" as *;
 
-$mt: (12, 24);
+$mt: (12, 16, 24);
 
 .pd20 {
   padding: 0 rem(20);
+}
+.mx16 {
+  margin-inline: rem(16);
+}
+.mx10 {
+  margin-inline: rem(10);
+}
+.mt18 {
+  margin-top: rem(18);
 }

@@ -73,11 +73,16 @@ $colorb9: #b9b9b9;
 .thumbnail {
   border-radius: rem(15) rem(15) rem(0) rem(0);
   overflow: hidden;
-  aspect-ratio: 3/2;
+  height: rem(105);
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  &__small {
+    @include img-size(small);
   }
 }
 
@@ -105,6 +110,24 @@ $colorb9: #b9b9b9;
     display: flex;
     justify-content: space-between;
   }
+  &__notiIcon {
+    display: inline-flex;
+    width: rem(58);
+    height: rem(58);
+    background: red; /*#f4f6f9;8*/
+    border-radius: rem(100);
+    text-align: center;
+    img {
+      width: rem(24);
+      height: rem(24);
+    }
+  }
+}
+.shadow {
+  background: $white;
+  box-shadow: 0 rem(2) rem(4) 0px rgba(0, 32, 96, 0.2);
+  padding: rem(10);
+  border-radius: rem(15);
 }
 .star {
   font-size: rem(12);
@@ -134,16 +157,18 @@ $colorb9: #b9b9b9;
   display: flex;
   justify-content: space-between;
   color: $black12;
-  .info {
-    display: block;
-    position: relative;
-  }
+}
+.info {
+  display: block;
+  position: relative;
+  font-size: rem(11);
+}
 
-  .price {
-    font-size: rem(11);
-    font-weight: 600;
-    color: $Fontblue;
-  }
+.price {
+  font-size: rem(11);
+  font-weight: 600;
+  color: $Fontblue;
+  font-size: rem(11);
 }
 
 .mask {

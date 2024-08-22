@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+
+.table-type1 {
+  margin-top: rem(18);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  dl {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: rem(10);
+    line-height: rem(20);
+
+    dt {
+      color: $gray67;
+      font-size: rem(13);
+      font-weight: 600;
+      letter-spacing: rem(-0.3);
+      text-align: left;
+    }
+    dd {
+      color: $gray12;
+      font-size: rem(13);
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+
+  .total {
+    margin-top: rem(40);
+  }
+}
