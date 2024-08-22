@@ -78,7 +78,6 @@ fieldset {
 .select {
   $result: map-get($selectSetting, paddingInline) * 2 + map-get($selectSetting, bgWidth);
   @extend %form;
-
   @include background(map-get($selectSetting, bgUrl), right map-get($selectSetting, iconPosition) center);
   padding-right: rem($result);
   appearance: none;
