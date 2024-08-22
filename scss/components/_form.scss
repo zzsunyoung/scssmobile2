@@ -74,7 +74,6 @@ fieldset {
     flex: 1;
   }
 }
-
 .select {
   $result: map-get($selectSetting, paddingInline) * 2 + map-get($selectSetting, bgWidth);
   @extend %form;
