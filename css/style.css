@@ -507,6 +507,55 @@ body {
   font-weight: 600;
 }
 
+.select, .input {
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #5c5c5c;
+  box-sizing: border-box;
+  padding-inline: 1rem 1.5rem;
+  color: #000;
+  font-size: 1.3rem;
+  line-height: 0.1rem;
+}
+.select::placeholder, .input::placeholder {
+  color: #95a2b0;
+}
+.select:disabled, .input:disabled {
+  background: #f4f6f9;
+  border: 0;
+}
+[readonly].select, [readonly].input {
+  background: rgba(244, 246, 249, 0.05);
+}
+
+fieldset legend {
+  overflow: hidden;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.input {
+  width: var(--w, 100%);
+}
+
+.date {
+  display: flex;
+  gap: 1.3rem;
+}
+.date > * {
+  flex: 1;
+}
+
+.select {
+  background: url(../images/bg_select.svg) no-repeat right 1.2rem center;
+  padding-right: 3rem;
+  appearance: none;
+  width: var(--w, 100%);
+}
+
 .table-type1 {
   margin-top: 1.8rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);

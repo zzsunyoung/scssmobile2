@@ -120,39 +120,56 @@
           </nav>
         </div>
       </details>
-      <details name="guide" open>
+      <details name="guide">
         <summary>Table</summary>
-        <div class="mx10">
-          <h2>테이블1</h2>
-          <table class="table-type1">
-            <caption>
-              Woodland Apartment summayr
-            </caption>
-            <colgroup>
-              <col style="width: 50%" />
-              <col style="*" />
-            </colgroup>
-            <tbody>
-              <tr>
-                <th>Booking Date</th>
-                <td>
-                  <p>August 24, 2023 <span> 10:00 AM</span></p>
-                </td>
-              </tr>
-              <tr>
-                <th>Check In</th>
-                <td>
-                  <p>October 04, 2023</p>
-                </td>
-              </tr>
-              <tr>
-                <th>Total</th>
-                <td>
-                  <p>November 03, 2023</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="table-type1">
+          <dl>
+            <dt>Booking Date</dt>
+            <dd>
+              <p>August 24, 2023 <span> 10:00 AM</span></p>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Check In</dt>
+            <dd>
+              <p>October 04, 2023</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Duration</dt>
+            <dd>
+              <p>November 03, 2023</p>
+            </dd>
+          </dl>
+        </div>
+      </details>
+      <details name="guide" open>
+        <summary>폼가이드</summary>
+        <div class="">
+          <fieldset>
+            <legend>BookTour</legend>
+            <div>
+              <label>기본 INPUT</label>
+              <input type="text" class="input" placeholder="이름을 입력하세요." />
+              <label>readonly INPUT</label>
+              <input type="text" class="input" readonly placeholder="readonly" />
+              <label>disabled INPUT</label>
+              <input type="text" class="input" placeholder="disabled" disabled />
+              <label>Email</label>
+              <input type="email" class="input" placeholder="example@gmail.com" disabled />
+            </div>
+            <div class="date">
+              <select class="select">
+                <option>Day</option>
+              </select>
+              <select class="select">
+                <option>Month</option>
+              </select>
+              <select class="select">
+                <option>Year</option>
+              </select>
+            </div>
+          </fieldset>
         </div>
       </details>
     </div>

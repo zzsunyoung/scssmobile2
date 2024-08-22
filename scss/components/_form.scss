@@ -1,1 +1,86 @@
 @use "../abstracts/" as *;
+
+@use "sass:list";
+//폼요소 공통 디자인 정의
+$formSetting: (
+  "height": rem(40),
+  "borderRadius": rem(5),
+  "borderColor": rem(1) solid $gray5c,
+  "fontColor": $black,
+  "bgColor": $white,
+  "paddingInline": rem(10) rem(15),
+  "fontSize": rem(13),
+  "lineHeight": rem(1),
+  "placehodlerColor": $gray95,
+  "disabledBgColor": $grayf4,
+  "readonlyBgColor": rgba($grayf4, 0.05),
+);
+// Select디자인 정의
+$selectSetting: (
+  "bgUrl": "bg_select.svg",
+  "iconPosition": rem(12),
+  "bgWidth": 6,
+  "paddingInline": 12,
+);
+
+%form {
+  height: map-get($formSetting, height);
+  border-radius: map-get($formSetting, borderRadius);
+  border: map-get($formSetting, borderColor);
+  box-sizing: border-box;
+  background-color: map-get($formSetting, bGcolor);
+  padding-inline: map-get($formSetting, paddingInline);
+  color: map-get($formSetting, fontColor);
+  font-size: map-get($formSetting, fontSize);
+  line-height: map-get($formSetting, lineHeight);
+  letter-spacing: map-get($formSetting, letterSpacing);
+  &::placeholder {
+    color: map-get($formSetting, placehodlerColor);
+  }
+  &:disabled {
+    background: map-get($formSetting, disabledBgColor);
+    border: 0;
+  }
+  &[readonly] {
+    background: map-get($formSetting, readonlyBgColor);
+  }
+}
+
+fieldset {
+  legend {
+    @include a11y-hidden;
+  }
+}
+
+%label {
+  display: inline-flex;
+  gap: rem(4);
+  align-items: center;
+  color: $gray6a;
+  font-size: rem(12);
+  line-height: 1;
+  letter-spacing: rem(-0.5);
+}
+
+.input {
+  @extend %form;
+  width: var(--w, 100%);
+}
+
+.date {
+  display: flex;
+  gap: rem(13);
+  > * {
+    flex: 1;
+  }
+}
+
+.select {
+  $result: map-get($selectSetting, paddingInline) * 2 + map-get($selectSetting, bgWidth);
+  @extend %form;
+
+  @include background(map-get($selectSetting, bgUrl), right map-get($selectSetting, iconPosition) center);
+  padding-right: rem($result);
+  appearance: none;
+  width: var(--w, 100%);
+}
