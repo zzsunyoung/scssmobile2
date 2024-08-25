@@ -208,6 +208,40 @@ body {
   display: inline-block;
 }
 
+.btn.small {
+  height: 3.2rem;
+  font-size: 1.2rem;
+  padding-inline: 0.7rem;
+  font-weight: 500;
+}
+.btn.base {
+  height: 5rem;
+  font-size: 1.7rem;
+  padding-inline: 2rem;
+  font-weight: 600;
+}
+.btn.lg {
+  height: 6rem;
+  font-size: 2rem;
+  padding-inline: 2rem;
+}
+.btn.fullsize {
+  width: 100%;
+}
+
+.btn.skyblue {
+  background-color: rgba(0, 110, 255, 0.1);
+  color: #185fa0;
+}
+.btn.blue {
+  background-color: #246bfd;
+  color: #fff;
+}
+.btnwhite {
+  background-color: #677294;
+  color: #fff;
+}
+
 .tab-type1 ul {
   padding: 1rem 0rem 0rem 0rem;
   display: flex;
@@ -583,6 +617,22 @@ fieldset legend {
   margin-top: 4rem;
 }
 
+.rounded5 {
+  border-radius: 0.5rem;
+}
+.rounded50 {
+  border-radius: 5rem;
+}
+.rounded55 {
+  border-radius: 5.5rem;
+}
+.rounded60 {
+  border-radius: 6rem;
+}
+.rounded-full {
+  border-radius: 100rem;
+}
+
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -666,16 +716,59 @@ fieldset legend {
   padding: 0 2rem;
 }
 
-.mx16 {
-  margin-inline: 1.6rem;
+.mt10 {
+  margin-top: 1rem;
+}
+
+.mt12 {
+  margin-top: 1.2rem;
+}
+
+.mt16 {
+  margin-top: 1.6rem;
+}
+
+.mt24 {
+  margin-top: 2.4rem;
+}
+
+.mt32 {
+  margin-top: 3.2rem;
 }
 
 .mx10 {
   margin-inline: 1rem;
 }
 
-.mt18 {
-  margin-top: 1.8rem;
+.mx16 {
+  margin-inline: 1.6rem;
+}
+
+.mx40 {
+  margin-inline: 4rem;
+}
+
+.mx43 {
+  margin-inline: 4.3rem;
+}
+
+.splah_bg {
+  display: block;
+  background: url(../images/@img_hous_bg1.png) no-repeat left top;
+  aspect-ratio: auto;
+  background-size: 100%;
+  height: 57.8rem;
+}
+
+.splah_bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 6rem;
+  padding: 0 4rem;
+  box-sizing: border-box;
+}
+.splah_bottom .logo {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

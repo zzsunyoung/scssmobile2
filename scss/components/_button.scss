@@ -1,3 +1,4 @@
+@use "sass:list"; //list.length 배열 함수 쓰기 위해서 사용한다.
 @use "../abstracts/" as *;
 
 %iconButtion {
@@ -38,5 +39,112 @@
     color: transparent;
     width: rem(21);
     display: inline-block;
+  }
+}
+
+// ****다중클래스 버튼 구분****
+// 공통
+// - .btn: 버튼 전체의 속성
+//    box-sizeing, inline-flex, align-items, gap
+// 크기
+// - btn.base / btn.lg / btn.sm / btn.xl / btn.xs
+//   높이, 크기, 좌우여백, 외곽선굵기
+// 색상
+// -btn.blue/ btn.white / .btn.gray
+//  배경색,글씨색, 외곽선색
+// 아이콘
+// - btn.ico1 /btn.ico2
+//   방향(befor, after),크기/배경이미지
+// 추가옵션
+// - 좌우크기(width:100%):fullsize
+//   모서리둥글기(border-radius): rounded /frounded-full
+
+//1.공통 btn  정의
+
+$buttonSize: (
+  1: (
+    "className": ".small",
+    "height": 32,
+    "fontSize": 12,
+    "paddingInline": 7,
+    "fontWeight": 500,
+  ),
+  2: (
+    "className": ".base",
+    "height": 50,
+    "fontSize": 17,
+    "paddingInline": 20,
+    "fontWeight": 600,
+  ),
+  3: (
+    "className": ".lg",
+    "height": 60,
+    "fontSize": 20,
+    "paddingInline": 20,
+    "fontWeight": null,
+  ),
+);
+$buttonColor: (
+  1: (
+    "className": ".skyblue",
+    "bgColor": rgba($btnBlue, 0.1),
+    "color": $fontSkyblue,
+  ),
+  2: (
+    "className": ".blue",
+    "bgColor": $primary,
+    "color": $white,
+  ),
+  3: (
+    "className": "white",
+    "bgColor": $gray67,
+    "color": $white,
+  ),
+);
+
+@mixin buttonSize($varName, $index) {
+  &#{map-get($varName, $index, className)} {
+    height: rem(map-get($varName, $index, height));
+    font-size: rem(map-get($varName, $index, fontSize));
+    padding-inline: rem(map-get($varName, $index, paddingInline));
+    font-weight: map-get($varName, $index, fontWeight);
+  }
+}
+.btn {
+  // display: flex;
+  // gap: rem(10);
+  // align-items: center;
+  // box-sizing: border-box;
+  // text-align: center;
+
+  @for $idx from 1 through list.length($buttonSize) {
+    @include buttonSize($buttonSize, $idx);
+  }
+  &.fullsize {
+    width: 100%;
+  }
+}
+
+// @mixin buttonColor($varName, $index) {
+//   &#{map-get($varName,$index,className)} {
+//     background-color: map-get($varName, $index, bgColor);
+//     color: map-get($varName, $index, Color);
+//   }
+// }
+// .btn {
+//   @for $index from 1 through list.length($buttonColor) {
+//     @include buttonColor($buttonColor, $index);
+//   }
+// }
+
+@mixin buttonColor($varNmae, $index) {
+  &#{map-get($varNmae, $index, className)} {
+    background-color: map-get($varNmae, $index, bgColor);
+    color: map-get($varNmae, $index, color);
+  }
+}
+.btn {
+  @for $index from 1 through list.length($buttonColor) {
+    @include buttonColor($buttonColor, $index);
   }
 }

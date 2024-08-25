@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+.splah_bg {
+  display: block;
+  @include background("@img_hous_bg1.png", left, top);
+  aspect-ratio: auto;
+  background-size: 100%;
+  height: rem(578);
+}
+.splah_bottom {
+  position: fixed;
+  width: 100%;
+  bottom: rem(60);
+  padding: 0 rem(40);
+  box-sizing: border-box;
+  .logo {
+    text-align: center;
+  }
+}

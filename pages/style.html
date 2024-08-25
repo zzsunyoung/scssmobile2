@@ -143,7 +143,7 @@
           </dl>
         </div>
       </details>
-      <details name="guide" open>
+      <details name="guide">
         <summary>폼가이드</summary>
         <div class="">
           <fieldset>
@@ -170,6 +170,32 @@
               </select>
             </div>
           </fieldset>
+        </div>
+      </details>
+      <details name="guide" open>
+        <summary>버튼 가이드</summary>
+        <!--
+          ****다중클래스 버튼 구분****
+          공통 
+          - .btn: 버튼 전체의 속성
+             box-sizeing, inline-flex, align-items, gap
+          크기
+          - btn.base / btn.lg / btn.sm / btn.xl / btn.xs
+            높이, 크기, 좌우여백, 외곽선굵기
+          색상
+          -btn.blue/ btn.white / .btn.gray
+           배경색,글씨색, 외곽선색
+          아이콘
+          - btn.ico1 /btn.ico2 
+            방향(befor, after),크기/배경이미지
+          추가옵션
+          - 좌우크기(width:100%):fullsize
+            모서리둥글기(border-radius): rounded /rounded-full
+          -->
+        <div class="mx16">
+          <button class="btn small skyblue rounded50 fullsize">small skyblue</button>
+          <button class="btn base blue rounded60 fullsize mt10">base blue</button>
+          <button class="btn lg blue rounded60 fullsize mt10">lagrge skyblue</button>
         </div>
       </details>
     </div>

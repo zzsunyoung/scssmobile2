@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+$round: 5, 50, 55, 60, "-full";
+
+.rounded {
+  @each $size in $round {
+    @if $size == "-full" {
+      &#{$size} {
+        border-radius: rem(1000);
+      }
+    } @else {
+      &#{$size} {
+        border-radius: rem($size);
+      }
+    }
+  }
+}
