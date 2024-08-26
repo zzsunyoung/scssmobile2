@@ -637,6 +637,12 @@ fieldset legend {
   border-radius: 100rem;
 }
 
+.profile-type {
+  display: flex;
+  justify-content: space-between;
+  background: red;
+}
+
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
