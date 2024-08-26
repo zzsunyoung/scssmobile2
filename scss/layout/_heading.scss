@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+.heading-type1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

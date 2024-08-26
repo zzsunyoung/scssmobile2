@@ -24,6 +24,11 @@
   @include background("ico_menu.svg", center);
   @extend %iconButtion;
 }
+.btn-more {
+  font-size: rem(12);
+  color: #989898;
+  font-weight: 600;
+}
 
 .search__filter {
   width: rem(52);

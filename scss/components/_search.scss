@@ -4,15 +4,15 @@
   display: flex;
   justify-content: space-between;
   height: rem(52);
+  position: relative;
 
   &__bg {
     background: var(--white, #fff);
     border-radius: 10px;
-    padding: rem(13);
     width: calc(100% - rem(52));
+    padding-top: rem(5);
     box-shadow: 0 2px 5px rgba(61, 61, 61, 0.2);
-    display: grid;
-    grid-template-columns: min-content 1fr;
+    box-sizing: border-box;
     align-items: center;
     &::before {
       content: "";
@@ -21,18 +21,12 @@
       height: rem(20);
       display: inline-block;
       position: absolute;
+      top: rem(15);
+      left: rem(17);
     }
-  }
-
-  &__input {
-    margin-left: rem(20);
-    input {
-      height: rem(25);
-      padding: rem(0) rem(10);
+    .input {
+      padding-inline: rem(40) rem(10);
       border: 0;
-      background-color: #fff;
-      width: 100%;
-      box-sizing: border-box;
     }
   }
 }

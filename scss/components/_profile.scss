@@ -3,5 +3,29 @@
 .profile-type {
   display: flex;
   justify-content: space-between;
-  background: red;
+  align-items: center;
+  &--title {
+    .tit {
+      font-size: rem(18);
+      font-weight: 400;
+      color: $grayf89;
+    }
+    .stit {
+      font-size: rem(20);
+      font-weight: 700;
+      color: $black12;
+    }
+  }
+  &--user {
+    width: rem(50);
+    height: rem(50);
+    border-radius: 100%;
+
+    overflow: hidden;
+    box-shadow: 0px 3px 2px rgba(0, 32, 96, 0.1);
+    img {
+      width: 100%;
+      border-radius: 100%;
+    }
+  }
 }
