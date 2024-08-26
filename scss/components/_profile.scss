@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.profile-type {
+  display: flex;
+  justify-content: space-between;
+  &--title {
+  }
+}

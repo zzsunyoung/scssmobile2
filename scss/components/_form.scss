@@ -75,7 +75,10 @@ fieldset {
   }
 }
 .select {
+  // select의 우측여백값 = input의 좌측여백 * 2 + 이미지가로크기;
   $result: map-get($selectSetting, paddingInline) * 2 + map-get($selectSetting, bgWidth);
+  // @debug $result; //데이터확인
+
   @extend %form;
   @include background(map-get($selectSetting, bgUrl), right map-get($selectSetting, iconPosition) center);
   padding-right: rem($result);

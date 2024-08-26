@@ -1,0 +1,103 @@
+@use "../abstracts/" as *;
+
+.login-form {
+}
+.login-logo {
+  text-align: center;
+}
+
+.input-type1 {
+  label {
+    font-size: rem(14);
+    font-weight: 500;
+    color: #091130;
+  }
+  .input {
+    border-radius: 0;
+    margin-inline: rem(50);
+    border: 0;
+  }
+}
+
+.inputbox {
+  display: flex;
+  padding-top: rem(3);
+  height: rem(50);
+  box-sizing: border-box;
+  border-radius: rem(10);
+  border: rem(1) solid $gray5c;
+  position: relative;
+}
+.username {
+  &::before {
+    @include background("ico_sign_user.svg", center);
+    content: "";
+    display: inline-block;
+    width: rem(17);
+    height: rem(17);
+    position: absolute;
+    left: rem(17);
+    top: rem(13);
+  }
+}
+
+.password {
+  &::before {
+    @include background("ico_sign_pw.svg", center);
+    content: "";
+    display: inline-block;
+    width: rem(20);
+    height: rem(17);
+    position: absolute;
+    left: rem(17);
+    top: rem(14);
+  }
+  .password_view {
+    @include background("ico_sign_view.svg", center);
+    width: rem(17);
+    height: rem(14);
+    position: absolute;
+    right: rem(27);
+    top: rem(18);
+  }
+}
+
+.sns-type {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  // margin-top: rem(30);
+
+  &--continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(10);
+    color: $gray61;
+    font-size: rem(11);
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+
+    &::before {
+      background: linear-gradient(270deg, rgba(97, 97, 97, 0.75) 0%, rgba(97, 97, 97, 0) 94.39%);
+      content: "";
+      display: inline-block;
+      width: 50%;
+      height: rem(1);
+    }
+    &::after {
+      background: linear-gradient(90deg, rgba(97, 97, 97, 0.75) 0%, rgba(97, 97, 97, 0) 94.39%);
+      content: "";
+      display: inline-block;
+      width: 50%;
+      height: rem(1);
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(20);
+  }
+}

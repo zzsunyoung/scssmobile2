@@ -536,6 +536,10 @@ body {
   font-size: 2rem;
   font-weight: 600;
 }
+.heading.lg {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
 .heading.base {
   font-size: 1.5rem;
   font-weight: 600;
@@ -728,12 +732,28 @@ fieldset legend {
   margin-top: 1.6rem;
 }
 
+.mt20 {
+  margin-top: 2rem;
+}
+
 .mt24 {
   margin-top: 2.4rem;
 }
 
+.mt30 {
+  margin-top: 3rem;
+}
+
 .mt32 {
   margin-top: 3.2rem;
+}
+
+.mt60 {
+  margin-top: 6rem;
+}
+
+.mt75 {
+  margin-top: 7.5rem;
 }
 
 .mx10 {
@@ -742,6 +762,10 @@ fieldset legend {
 
 .mx16 {
   margin-inline: 1.6rem;
+}
+
+.mx25 {
+  margin-inline: 2.5rem;
 }
 
 .mx40 {
@@ -769,6 +793,98 @@ fieldset legend {
 }
 .splah_bottom .logo {
   text-align: center;
+}
+
+.login-logo {
+  text-align: center;
+}
+
+.input-type1 label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #091130;
+}
+.input-type1 .input {
+  border-radius: 0;
+  margin-inline: 5rem;
+  border: 0;
+}
+
+.inputbox {
+  display: flex;
+  padding-top: 0.3rem;
+  height: 5rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  border: 0.1rem solid #5c5c5c;
+  position: relative;
+}
+
+.username::before {
+  background: url(../images/ico_sign_user.svg) no-repeat center;
+  content: "";
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  position: absolute;
+  left: 1.7rem;
+  top: 1.3rem;
+}
+
+.password::before {
+  background: url(../images/ico_sign_pw.svg) no-repeat center;
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 1.7rem;
+  position: absolute;
+  left: 1.7rem;
+  top: 1.4rem;
+}
+.password .password_view {
+  background: url(../images/ico_sign_view.svg) no-repeat center;
+  width: 1.7rem;
+  height: 1.4rem;
+  position: absolute;
+  right: 2.7rem;
+  top: 1.8rem;
+}
+
+.sns-type {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sns-type--continue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #616161;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+.sns-type--continue::before {
+  background: linear-gradient(270deg, rgba(97, 97, 97, 0.75) 0%, rgba(97, 97, 97, 0) 94.39%);
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 0.1rem;
+}
+.sns-type--continue::after {
+  background: linear-gradient(90deg, rgba(97, 97, 97, 0.75) 0%, rgba(97, 97, 97, 0) 94.39%);
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 0.1rem;
+}
+.sns-type ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
