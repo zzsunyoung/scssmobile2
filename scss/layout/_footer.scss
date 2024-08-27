@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+.footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  ul {
+  }
+  li {
+    width: rem(20);
+    height: rem(21);
+  }
+}

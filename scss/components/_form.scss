@@ -15,12 +15,15 @@ $formSetting: (
   "disabledBgColor": $grayf4,
   "readonlyBgColor": rgba($grayf4, 0.05),
 );
-// Select디자인 정의
-$selectSetting: (
-  "bgUrl": "bg_select.svg",
-  "iconPosition": rem(12),
-  "bgWidth": 6,
-  "paddingInline": 12,
+//radio 디자인 정의
+$radioSettings: (
+  1: (
+    "className": ".check-type1",
+    "width": rem(32),
+    "height": rem(33),
+    "offImage": "ico_bookmark_off.svg",
+    "onImage": "ico_bookmark_on.svg",
+  ),
 );
 
 %form {
@@ -74,14 +77,33 @@ fieldset {
     flex: 1;
   }
 }
-.select {
-  // select의 우측여백값 = input의 좌측여백 * 2 + 이미지가로크기;
-  $result: map-get($selectSetting, paddingInline) * 2 + map-get($selectSetting, bgWidth);
-  // @debug $result; //데이터확인
-
-  @extend %form;
-  @include background(map-get($selectSetting, bgUrl), right map-get($selectSetting, iconPosition) center);
-  padding-right: rem($result);
-  appearance: none;
-  width: var(--w, 100%);
+@mixin Radio($mapName, $index) {
+  #{map-get($mapName, $index, className)} {
+    @include a11y-hidden;
+    + label {
+      display: inline-flex;
+      align-items: center;
+      gap: rem(11);
+      color: $gray67;
+      font-size: rem(13);
+      font-weight: 500;
+      letter-spacing: rem(-0.3);
+      &::before {
+        @include background(map-get($radioSettings, $index, offImage));
+        content: "";
+        width: map-get($radioSettings, $index, width);
+        height: map-get($radioSettings, $index, height);
+      }
+    }
+    &:checked {
+      + label {
+        &::before {
+          @include background(map-get($radioSettings, $index, onImage));
+        }
+      }
+    }
+  }
+}
+@for $idx from 1 through list.length($radioSettings) {
+  @include Radio($radioSettings, $idx);
 }

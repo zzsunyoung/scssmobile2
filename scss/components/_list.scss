@@ -7,6 +7,7 @@ $colorb9: #b9b9b9;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   margin-top: rem(20);
   background: var(--white);
+
   li {
     background: var(--white, #fff);
     border-radius: rem(10.17);
@@ -14,22 +15,34 @@ $colorb9: #b9b9b9;
   }
   &__content {
     padding: rem(8);
-    .list-tit {
-      font-size: 1.2rem;
-      color: $black2f;
-      a {
-        font-weight: 600;
-        color: red;
-      }
+  }
+}
+.list-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  p {
+    font-size: rem(9);
+    color: $Fontblue;
+  }
+  .list-type3 & {
+    p {
+      font-size: rem(11);
     }
-    .list-info {
-      display: flex;
-      justify-content: space-between;
-      font-weight: 400;
-      p {
-        font-size: rem(9);
-        color: $Fontblue;
-      }
+  }
+}
+.list-tit {
+  font-size: rem(12);
+  color: $black2f;
+  a {
+    font-weight: 600;
+  }
+  .list-type3 & {
+    font-size: rem(15);
+
+    a {
+      font-weight: 500;
+      color: $black2f;
     }
   }
 }
@@ -42,7 +55,11 @@ $colorb9: #b9b9b9;
   .list-type2 & {
     color: $gray41;
   }
-
+  .list-type3 & {
+    color: $grayb9;
+    font-size: rem(11);
+    font-weight: 400;
+  }
   &::before {
     content: "";
     @include background("ico_map.svg", center);
@@ -64,8 +81,9 @@ $colorb9: #b9b9b9;
       height: rem(11);
       display: inline-block;
       position: relative;
-      left: rem(-3);
+      left: 0;
       top: rem(3);
+      margin-right: rem(3);
     }
   }
 }
@@ -84,21 +102,31 @@ $colorb9: #b9b9b9;
   &__small {
     @include img-size(small);
   }
+  .list-type3 & {
+    aspect-ratio: auto;
+  }
 }
 
 .list-type2 {
   &__content {
     display: flex;
-    flex: 1;
+    gap: rem(10);
+    background-color: $white;
+    border-radius: rem(15);
+    margin-bottom: rem(10);
+
+    .list-type2 & {
+      padding: rem(10);
+    }
   }
   &__thumbnail {
     border-radius: rem(10);
     height: rem(89);
+    flex: 0;
   }
 
   &-box {
     flex: 1;
-    margin-left: rem(10);
     .list-tit {
       color: $gray12;
       font-size: rem(17);
@@ -121,6 +149,20 @@ $colorb9: #b9b9b9;
       width: rem(24);
       height: rem(24);
     }
+  }
+  + .list-type2 {
+    margin-bottom: rem(10);
+  }
+}
+.list-type3 {
+  display: flex;
+  gap: rem(18);
+  overflow: auto;
+  li {
+    flex: 1;
+    background: var(--white, #fff);
+    border-radius: rem(10.17);
+    box-shadow: 0 2px 4px rgba(0, 32, 96, 0.2);
   }
 }
 .shadow {

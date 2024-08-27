@@ -30,6 +30,11 @@
   font-weight: 600;
 }
 
+.btn-home {
+  @include background("ico_nav_home.svg", center);
+  width: rem(20);
+  height: rem(30);
+}
 .search__filter {
   width: rem(52);
   border-radius: 1rem;
