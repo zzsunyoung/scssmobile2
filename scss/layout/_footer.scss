@@ -1,13 +1,37 @@
 @use "../abstracts/" as *;
 .footer {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   position: fixed;
   bottom: 0;
   width: 100%;
+
   ul {
+    display: flex;
+    align-items: center;
+    gap: rem(63);
   }
   li {
     width: rem(20);
-    height: rem(21);
+    position: relative;
+    &.on {
+      &::before {
+        content: "";
+        position: absolute;
+        width: rem(7);
+        height: rem(7);
+        background: #3c94ff;
+        display: block;
+        border-radius: 100%;
+        bottom: rem(1);
+        left: rem(7);
+      }
+    }
+  }
+  button {
+    width: rem(22);
+    height: rem(33);
+  }
+  nav {
+    margin: rem(15) 0 rem(15);
   }
 }

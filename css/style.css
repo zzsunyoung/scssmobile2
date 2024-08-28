@@ -200,8 +200,18 @@ body {
 
 .btn-home {
   background: url(../images/ico_nav_home.svg) no-repeat center;
-  width: 2rem;
-  height: 3rem;
+}
+
+.btn-map {
+  background: url(../images/ico_nav_map.svg) no-repeat center;
+}
+
+.btn-bookmark {
+  background: url(../images/ico_nav_bookmark.svg) no-repeat center;
+}
+
+.btn-user {
+  background: url(../images/ico_nav_user.svg) no-repeat center;
 }
 
 .search__filter {
@@ -903,6 +913,10 @@ fieldset legend {
   margin-inline: 4.3rem;
 }
 
+.mx53 {
+  margin-inline: 5.3rem;
+}
+
 .ml30 {
   margin-left: 3rem;
 }
@@ -1025,14 +1039,37 @@ fieldset legend {
 }
 
 .footer {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   position: fixed;
   bottom: 0;
   width: 100%;
 }
+.footer ul {
+  display: flex;
+  align-items: center;
+  gap: 6.3rem;
+}
 .footer li {
   width: 2rem;
-  height: 2.1rem;
+  position: relative;
+}
+.footer li.on::before {
+  content: "";
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: #3c94ff;
+  display: block;
+  border-radius: 100%;
+  bottom: 0.1rem;
+  left: 0.7rem;
+}
+.footer button {
+  width: 2.2rem;
+  height: 3.3rem;
+}
+.footer nav {
+  margin: 1.5rem 0 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

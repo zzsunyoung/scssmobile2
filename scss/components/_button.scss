@@ -32,9 +32,17 @@
 
 .btn-home {
   @include background("ico_nav_home.svg", center);
-  width: rem(20);
-  height: rem(30);
 }
+.btn-map {
+  @include background("ico_nav_map.svg", center);
+}
+.btn-bookmark {
+  @include background("ico_nav_bookmark.svg", center);
+}
+.btn-user {
+  @include background("ico_nav_user.svg", center);
+}
+
 .search__filter {
   width: rem(52);
   border-radius: 1rem;
