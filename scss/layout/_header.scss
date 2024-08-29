@@ -24,3 +24,21 @@
     order: 3;
   }
 }
+.sub {
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  width: -webkit-fill-available;
+  top: rem(35);
+  .btn-prev {
+    @include background("ico_prev1.svg", center);
+    width: rem(40);
+    height: rem(40);
+  }
+  .btn-like {
+    width: rem(4);
+    aspect-ratio: 1;
+  }
+  .flex {
+    display: flex;
+  }
+}

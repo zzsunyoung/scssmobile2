@@ -24,6 +24,13 @@ $radioSettings: (
     "offImage": "ico_bookmark_off.svg",
     "onImage": "ico_bookmark_on.svg",
   ),
+  2: (
+    "className": ".btn-like",
+    "width": rem(40),
+    "height": rem(40),
+    "offImage": "ico_like_off.svg",
+    "onImage": "ico_like_on.svg",
+  ),
 );
 
 %form {

@@ -1,9 +1,9 @@
 @use "../abstracts/" as *;
 
-$mt: (10, 12, 16, 20, 24, 30, 32, 60, 75);
-$mx: (10, 16, 25, 30, 40, 43, 53);
+$mt: (5, 10, 12, 15, 16, 20, 24, 30, 32, 60, 75);
+$mx: (10, 20, 16, 25, 30, 40, 43, 53);
 $ml: (30);
-
+$mr: (10);
 .pd20 {
   padding: 0 rem(20);
 }
@@ -22,5 +22,10 @@ $ml: (30);
 @each $margin in $ml {
   .ml#{$margin} {
     margin-left: rem($margin);
+  }
+}
+@each $margin in $mr {
+  .mr#{$margin} {
+    margin-right: rem($margin);
   }
 }

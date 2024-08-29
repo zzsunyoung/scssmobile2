@@ -9,6 +9,10 @@
     width: rem(32);
     height: rem(32);
   }
+  .sub & {
+    width: rem(40);
+    height: rem(40);
+  }
 }
 
 .btn-prev {
@@ -41,6 +45,10 @@
 }
 .btn-user {
   @include background("ico_nav_user.svg", center);
+}
+.btn-share {
+  @include background("ico_share.svg", center);
+  @extend %iconButtion;
 }
 
 .search__filter {

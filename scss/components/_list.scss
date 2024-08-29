@@ -45,6 +45,15 @@ $colorb9: #b9b9b9;
       color: $black2f;
     }
   }
+  .list-type4 & {
+    font-size: rem(20);
+    font-weight: 600;
+  }
+}
+.list-stit {
+  font-size: rem(13);
+  color: $gray8c;
+  font-weight: 400;
 }
 .map {
   font-size: rem(7);
@@ -119,6 +128,7 @@ $colorb9: #b9b9b9;
       padding: rem(10);
     }
   }
+
   &__thumbnail {
     border-radius: rem(10);
     height: rem(89);
@@ -163,6 +173,57 @@ $colorb9: #b9b9b9;
     background: var(--white, #fff);
     border-radius: rem(10.17);
     box-shadow: 0 2px 4px rgba(0, 32, 96, 0.2);
+  }
+}
+.list-type4 {
+  &__conetnt {
+    border-radius: 0;
+  }
+  .list-catagory {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.list-type5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: rem(10);
+  li {
+    background: $white;
+    border-radius: rem(12);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+    > div {
+      padding: rem(30) 0 rem(12);
+    }
+  }
+  p {
+    text-align: center;
+  }
+  .num {
+    font-size: rem(11);
+    font-weight: 500;
+    color: $Fontblue;
+  }
+  .desc {
+    font-size: rem(10);
+    font-weight: 400;
+    color: $gray6b;
+  }
+  .ico1 {
+    @include background("ico_product1.svg", center);
+    background-position: center rem(10);
+  }
+  .ico2 {
+    @include background("ico_product2.svg", center);
+    background-position: center rem(10);
+  }
+  .ico3 {
+    @include background("ico_product3.svg", center);
+    background-position: center rem(10);
+  }
+  .ico4 {
+    @include background("ico_product4.svg", center);
+    background-position: center rem(10);
   }
 }
 .shadow {

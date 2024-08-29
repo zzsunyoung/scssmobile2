@@ -170,14 +170,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.btn-menu, .btn-search, .btn-prev {
+.btn-share, .btn-menu, .btn-search, .btn-prev {
   display: inline-block;
   width: 2rem;
   height: 2rem;
 }
-.hdeader .btn-menu, .hdeader .btn-search, .hdeader .btn-prev {
+.hdeader .btn-share, .hdeader .btn-menu, .hdeader .btn-search, .hdeader .btn-prev {
   width: 3.2rem;
   height: 3.2rem;
+}
+.sub .btn-share, .sub .btn-menu, .sub .btn-search, .sub .btn-prev {
+  width: 4rem;
+  height: 4rem;
 }
 
 .btn-prev {
@@ -212,6 +216,10 @@ body {
 
 .btn-user {
   background: url(../images/ico_nav_user.svg) no-repeat center;
+}
+
+.btn-share {
+  background: url(../images/ico_share.svg) no-repeat center;
 }
 
 .search__filter {
@@ -385,6 +393,16 @@ body {
   font-weight: 500;
   color: #2f2f2f;
 }
+.list-type4 .list-tit {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.list-stit {
+  font-size: 1.3rem;
+  color: #8c8c8c;
+  font-weight: 400;
+}
 
 .map {
   font-size: 0.7rem;
@@ -499,6 +517,57 @@ body {
   background: var(--white, #fff);
   border-radius: 1.017rem;
   box-shadow: 0 2px 4px rgba(0, 32, 96, 0.2);
+}
+
+.list-type4__conetnt {
+  border-radius: 0;
+}
+.list-type4 .list-catagory {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-type5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.list-type5 li {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 0px rgba(0, 0, 0, 0.05);
+}
+.list-type5 li > div {
+  padding: 3rem 0 1.2rem;
+}
+.list-type5 p {
+  text-align: center;
+}
+.list-type5 .num {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0066ff;
+}
+.list-type5 .desc {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6b6b6b;
+}
+.list-type5 .ico1 {
+  background: url(../images/ico_product1.svg) no-repeat center;
+  background-position: center 1rem;
+}
+.list-type5 .ico2 {
+  background: url(../images/ico_product2.svg) no-repeat center;
+  background-position: center 1rem;
+}
+.list-type5 .ico3 {
+  background: url(../images/ico_product3.svg) no-repeat center;
+  background-position: center 1rem;
+}
+.list-type5 .ico4 {
+  background: url(../images/ico_product4.svg) no-repeat center;
+  background-position: center 1rem;
 }
 
 .shadow {
@@ -700,6 +769,33 @@ fieldset legend {
   background: url(../images/ico_bookmark_on.svg) no-repeat;
 }
 
+.btn-like {
+  overflow: hidden;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.btn-like + label {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.1rem;
+  color: #677294;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: -0.03rem;
+}
+.btn-like + label::before {
+  background: url(../images/ico_like_off.svg) no-repeat;
+  content: "";
+  width: 4rem;
+  height: 4rem;
+}
+.btn-like:checked + label::before {
+  background: url(../images/ico_like_on.svg) no-repeat;
+}
+
 .table-type1 {
   margin-top: 1.8rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -770,6 +866,16 @@ fieldset legend {
   border-radius: 100%;
 }
 
+.visual-type1 {
+  position: relative;
+}
+.visual-type1 .visual-img {
+  width: 100%;
+}
+.visual-type1 img {
+  width: 100%;
+}
+
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -792,6 +898,25 @@ fieldset legend {
 .header__right {
   justify-self: end;
   order: 3;
+}
+
+.sub {
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  width: -webkit-fill-available;
+  top: 3.5rem;
+}
+.sub .btn-prev {
+  background: url(../images/ico_prev1.svg) no-repeat center;
+  width: 4rem;
+  height: 4rem;
+}
+.sub .btn-like {
+  width: 0.4rem;
+  aspect-ratio: 1;
+}
+.sub .flex {
+  display: flex;
 }
 
 .a11y-hidden {
@@ -853,12 +978,20 @@ fieldset legend {
   padding: 0 2rem;
 }
 
+.mt5 {
+  margin-top: 0.5rem;
+}
+
 .mt10 {
   margin-top: 1rem;
 }
 
 .mt12 {
   margin-top: 1.2rem;
+}
+
+.mt15 {
+  margin-top: 1.5rem;
 }
 
 .mt16 {
@@ -893,6 +1026,10 @@ fieldset legend {
   margin-inline: 1rem;
 }
 
+.mx20 {
+  margin-inline: 2rem;
+}
+
 .mx16 {
   margin-inline: 1.6rem;
 }
@@ -919,6 +1056,10 @@ fieldset legend {
 
 .ml30 {
   margin-left: 3rem;
+}
+
+.mr10 {
+  margin-right: 1rem;
 }
 
 .splah_bg {
