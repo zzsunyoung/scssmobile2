@@ -298,9 +298,6 @@ body {
   border-radius: 5rem;
   padding: 0.9rem 1.8rem 0.9rem 0rem;
 }
-.tab-type1 li {
-  flex: 1;
-}
 .tab-type1 button {
   color: #242424;
   background: #f4f6f9;
@@ -626,6 +623,28 @@ body {
 .list-type7 li {
   background: #fff;
   border-radius: 0.5rem;
+  aspect-ratio: auto;
+}
+.list-type7 img {
+  width: 100%;
+}
+
+.list-type8 {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  position: absolute;
+  bottom: 1rem;
+  left: -50%;
+  transform: translate(-50%);
+}
+.list-type8 ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.list-type8 li {
+  width: 5.5rem;
+  height: 5.5rem;
 }
 
 .shadow {

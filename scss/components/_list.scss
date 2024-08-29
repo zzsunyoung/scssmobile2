@@ -261,6 +261,27 @@ $colorb9: #b9b9b9;
   li {
     background: $white;
     border-radius: rem(5);
+    aspect-ratio: auto;
+  }
+  img {
+    width: 100%;
+  }
+}
+.list-type8 {
+  background: $white;
+  border-radius: rem(5);
+  padding: rem(4);
+  position: absolute;
+  bottom: rem(10);
+  left: -50%;
+  transform: translate(-50%);
+  ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+  li {
+    width: rem(55);
+    height: rem(55);
   }
 }
 .shadow {
