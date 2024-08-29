@@ -95,6 +95,22 @@ $colorb9: #b9b9b9;
       margin-right: rem(3);
     }
   }
+  &__address {
+    color: $black2A;
+    font-size: rem(13);
+    font-weight: 400;
+    &::before {
+      content: "";
+      @include background("ico_map3.svg", center);
+      width: rem(15);
+      height: rem(19);
+      display: inline-block;
+      position: relative;
+      left: 0;
+      top: rem(1.3);
+      margin-right: rem(5);
+    }
+  }
 }
 
 .thumbnail {
@@ -130,6 +146,7 @@ $colorb9: #b9b9b9;
   }
 
   &__thumbnail {
+    position: relative;
     border-radius: rem(10);
     height: rem(89);
     flex: 0;
@@ -209,21 +226,41 @@ $colorb9: #b9b9b9;
     font-weight: 400;
     color: $gray6b;
   }
-  .ico1 {
-    @include background("ico_product1.svg", center);
-    background-position: center rem(10);
+}
+
+.list-type6 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: rem(15) rem(10);
+  li {
+    background: $white;
+    border-radius: rem(12);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+    padding-inline: rem(8);
+    > div {
+      padding: rem(30) 0 rem(12);
+    }
   }
-  .ico2 {
-    @include background("ico_product2.svg", center);
-    background-position: center rem(10);
+  p {
+    text-align: center;
   }
-  .ico3 {
-    @include background("ico_product3.svg", center);
-    background-position: center rem(10);
+
+  .desc {
+    font-size: rem(10);
+    font-weight: 500;
+    color: $gray6b;
+    @include ellipsis(1);
+    margin-top: rem(7);
   }
-  .ico4 {
-    @include background("ico_product4.svg", center);
-    background-position: center rem(10);
+}
+
+.list-type7 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(5);
+  li {
+    background: $white;
+    border-radius: rem(5);
   }
 }
 .shadow {
@@ -266,12 +303,24 @@ $colorb9: #b9b9b9;
   position: relative;
   font-size: rem(11);
 }
-
+.total {
+  color: $black2A;
+  font-size: rem(14);
+  font-weight: 600;
+}
 .price {
   font-size: rem(11);
   font-weight: 600;
   color: $Fontblue;
   font-size: rem(11);
+  .btn-layout1 & {
+    font-size: rem(25);
+    font-weight: 500;
+    span {
+      color: $gray8c;
+      font-size: rem(22);
+    }
+  }
 }
 
 .mask {
@@ -304,4 +353,58 @@ $colorb9: #b9b9b9;
     left: rem(-3);
     top: rem(2);
   }
+}
+.ico1 {
+  @include background("ico_product1.svg", center);
+  background-position: center rem(10);
+}
+.ico2 {
+  @include background("ico_product2.svg", center);
+  background-position: center rem(10);
+}
+.ico3 {
+  @include background("ico_product3.svg", center);
+  background-position: center rem(10);
+}
+.ico4 {
+  @include background("ico_product4.svg", center);
+  background-position: center rem(10);
+}
+.ico5 {
+  @include background("ico_product5.svg", center);
+  background-position: center rem(10);
+}
+.ico6 {
+  @include background("ico_product6.svg", center);
+  background-position: center rem(10);
+}
+.ico7 {
+  @include background("ico_product7.svg", center);
+  background-position: center rem(10);
+}
+.ico8 {
+  @include background("ico_product8.svg", center);
+  background-position: center rem(10);
+}
+.ico9 {
+  @include background("ico_product9.svg", center);
+  background-position: center rem(10);
+}
+.ico10 {
+  @include background("ico_product10.svg", center);
+  background-position: center rem(10);
+}
+.ico11 {
+  @include background("ico_product11.svg", center);
+  background-position: center rem(10);
+}
+.ico12 {
+  @include background("ico_product12.svg", center);
+  background-position: center rem(10);
+}
+.img_like {
+  display: block;
+  position: absolute;
+  top: rem(5);
+  right: rem(5);
 }

@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 
-.profile-type {
+.profile-type1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,4 +28,36 @@
       border-radius: 100%;
     }
   }
+}
+
+.profile-type2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &--profile {
+    display: flex;
+    align-items: center;
+  }
+  &--content {
+    display: flex;
+    gap: rem(10);
+  }
+}
+.profile_img {
+  background: $white;
+  border-radius: rem(90);
+  width: rem(45);
+  height: rem(45);
+  img {
+    width: 100%;
+    border-radius: rem(90);
+  }
+}
+.profile_info {
+  margin-left: rem(10);
+}
+.name {
+  font-size: rem(13);
+  font-weight: 600;
+  color: $black2A;
 }

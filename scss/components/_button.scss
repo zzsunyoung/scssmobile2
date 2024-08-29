@@ -33,7 +33,11 @@
   color: #989898;
   font-weight: 600;
 }
-
+.btn-more2 {
+  font-size: rem(12);
+  color: $btnBlue;
+  font-weight: 600;
+}
 .btn-home {
   @include background("ico_nav_home.svg", center);
 }
@@ -50,7 +54,15 @@
   @include background("ico_share.svg", center);
   @extend %iconButtion;
 }
+.btn-mail {
+  @include background("ico_mail.svg", center);
+  @extend %iconButtion;
+}
 
+.btn-tel {
+  @include background("ico_tel.svg", center);
+  @extend %iconButtion;
+}
 .search__filter {
   width: rem(52);
   border-radius: 1rem;

@@ -8,3 +8,10 @@
     width: 100%;
   }
 }
+
+.imgbox {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
